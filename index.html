@@ -1,113 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Github Profile Display</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Brodie Farrell-Oates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A tech obsessed guy from Hobart, Tasmania.">
+    <meta name="author" content="Brodie Farrell-Oates">
+    <!-- Preview window tags -->
+    <meta property="og:title" content="Brodie Farrell-Oates">
+    <meta property="og:description" content="A tech obsessed guy from Hobart, Tasmania.">
+    <meta property="og:image" content="img/brodie.jfif">
+    <meta property="og:url" content="https://brodiefarrell.dev">
+    
+    <!-- Custom styles -->
+    <!-- <link href="style.css" rel="stylesheet"> -->
 </head>
 
-<body>
+<body class="bg-dark text-white">
     
-    <div class="container">
-        <header>
-            <h1>Github Profile Viewer</h1>
-            <form id="handleForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Handle</label>
-                    <input type="name" class="form-control" id="handle" aria-describedby="handleHelp">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button><br><br>
-                <div class="alert d-none" id="alertmsg"></div>
-            </form>
-            <hr><br>
-        </header>
-
-        <div class='card' style="width: 300px;" id='profile'>
-            <div class="card-img-top" id="profile-image" alt="Github Profile Image"></div>
-            <div class="card-body">
-                <h4 class='card-title' id="name"></h4>
-                <span id="company"></span><br>
-                <span id="location"></span><br>
-                <span id="site"></span><br>
+    <main>
+        <div class="px-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 rounded" src="img/brodie.jfif" width="200px;" alt="Photo showing Brodie at his office desk.">
+            <h1 class="fw-bold py-3">Brodie Farrell-Oates</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Why hello there 👋<br> I'm Brodie. I love everything digital. You can find me making websites, software, games, videos and more... if it involves bits - I'm in!</p>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <span><a class="badge bg-secondary py-2 px-3" href="http://www.linkedin.com/in/brodiefarrell">LinkedIn</a></span>
+                <span><a class="badge bg-secondary py-2 px-3" href="https://www.instagram.com/brodiefarrell">Instagram</a></span>
+                <span><a class="badge bg-secondary py-2 px-3" href="https://github.com/brodiefarrell">Github</a></span>
+                <span ><a class="badge bg-secondary py-2 px-3" href="https://brodiefarrell.itch.io">Itch.io</a></span>
             </div>
         </div>
-    </div>
+        
+        <!-- About me -->
+        <div class="col-lg-6 px-5 mx-auto">
+            
+            <hr>
+            <h2 class="fw-bold py-3 text-center">About me</h2>
+            <p class="lead mb-4">
+                For the last seven years I have been working for <a class="link-light" href="http://www.sush.com.au">Sush</a> in an Administration &amp; Project Management role. A large part of my work with Sush has been maintaining and improving the IT infrastructure as the business has grown from 30 to 80+ staff.
+            </p>
+            <p class="lead mb-4">
+                In terms of education, I'm currently studying a Bachelor of ICT with the Univeristy of Tasmania to formalise and diversify my knowledge. I have previously completed my Cert IV in Project Management through a traineeship with Sush.
+            </p>
+            <p class="lead mb-4">
+                Outside of tech, I founded <a class="link-light" href="http://www.boundless.agency">Boundless Agency</a> in 2017 as a divergance into the artist/event management space. Boundless is now managed by Spencer Shannon-Hanson, with my role moving to an ad-hoc consultant whenever advice on the business direction is required.
+            </p><br>
+            
+        </div>
+        
+        <div class="col-lg-6 px-5 mx-auto">
+            <hr>
+            <h2 class="fw-bold py-3 text-center">Previous work</h2>
+            <!-- <p class="lead mb-4">I've worked on a heap of projects over the years, below I've listed some favourites.</p> -->
+        
+            <!-- Don't Touch the Laser -->
+            <div class="card bg-dark mb-3 mb-5 mx-auto shadow" style="max-width: 35em;">
+                <img class="card-img-top" src="img/donttouchlaser.gif" alt="Don't Touch the Laser Gameplay - Animated GIF">
+                <div class="card-body px-5">
+                    <h5 class="card-title">Don't Touch the Laser</h5>
+                    <p class="card-text">Battle waves of enemies with your laser stuck on, just try not to hit yourself.<br>A WebGL game built in Unity for a UTAS project.</p>
+                    <a class='btn btn-outline-light stretched-link my-2' href="https://brodiefarrell.itch.io/please-dont-touch-the-laser">Play on itch.io</a>
+                </div>
+            </div>
+            
+            <!-- Sush -->
+            <div class="card bg-dark mb-3 mb-5 mx-auto shadow" style="max-width: 35em;">
+                <img class="card-img-top" src="img/sush.PNG" alt="Screenshot of Sush website, showing the homepage.">
+                <div class="card-body px-5">
+                    <h5 class="card-title">Sush</h5>
+                    <p class="card-text">Developed the landing page and online presence for Sush's multiple business fronts - Sush, Sush Track, Sushimatic and Samurai Knights.<br>
+                    Online ordering powered by Square Online.</p>
+                    <a class='btn btn-outline-light stretched-link my-2' href="http://www.sush.com.au">View site</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
     
-    <script>
-        /* Checks submitted handle on Github API, returns profile details as object
-         * hndl: string of github username
-         * Returns: JSON parsed object from Github API
-         */
-        function getProfile(hndl) {
-            var username = hndl;
-            
-            var xhttp = new XMLHttpRequest();
-            
-            xhttp.onreadystatechange = function() {
-                if (xhttp.readyState == 4 && xhttp.status == 200) {
-                    var user = JSON.parse(xhttp.responseText);
-                    document.getElementById('profile-image').innerHTML = "<img class='card-img-top' src='" + user.avatar_url + "'>";
-                    document.getElementById('name').innerHTML = "<h3>" + user.name + "</h3>";
-                    document.getElementById('company').innerHTML = "<i class=\"bi bi-briefcase\"></i> " + user.company;
-                    document.getElementById('location').innerHTML = "<i class=\"bi bi-geo-alt\"></i> " + user.location;
-                    document.getElementById('site').innerHTML = "<i class=\"bi bi-cloud\"></i> " + "<a href='"+user.blog+"'>" + user.blog + "</a>";
-                }
-            }
-            
-            xhttp.open('GET', 'https://api.github.com/users/' + username, true);
-            xhttp.send();
-        }
-        
-        /* Checks if white space is contained in a given string
-         * s: string to be checked
-         * Returns: bool
-         */
-        function hasWhiteSpace(s) {
-          return s.indexOf(' ') >= 0;
-        }
-
-        
-        function checkProfile(e) {
-            e.preventDefault();
-            //console.log("Submitted...");
-            
-            var handle = document.getElementById('handle').value;
-            var msg = document.getElementById('alertmsg');
-            
-            //check if handle is empty
-            if (handle == ''){
-                msg.innerHTML = 'Please fill in a handle.';
-                msg.className = "alert alert-danger";
-            } else {
-                
-                //check name is > 1 characters
-                if (handle.length <= 2) {
-                    msg.innerHTML = 'The handle can\'t be that short, nice try...';
-                    msg.className = "alert alert-warning";
-                    
-                } else {
-                    
-                    //check handle for whitespace
-                    if (hasWhiteSpace(handle)) {
-                        msg.innerHTML = 'No spaces allowed, try removing them.';
-                        msg.className = "alert alert-warning";
-                        
-                    } else {
-                        //success
-                        msg.className = "d-none"; //hide alert box
-                        getProfile(handle);
-                    }
-                    
-                }
-                
-            }
-            
-        }
-        
-        document.getElementById('handleForm').addEventListener('submit', checkProfile, false);
-    </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
